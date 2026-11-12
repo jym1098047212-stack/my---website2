@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ee">
+  <meta name="description" content="面向中国学生的 A2 商务俄语课。通过插图、俄语发音、中俄双语词汇、短文和测试练习商务沟通。">
+  <title>Деловой русский · A2 商务俄语</title>
+  <link rel="icon" href="./assets/icon.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./lessons.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#main"><span class="brand-mark" lang="ru" aria-hidden="true">Д</span><span><strong lang="ru">Деловой русский</strong><small>商务俄语课堂</small></span></a>
+      <nav aria-label="课程导航">
+        <a href="#lessons">课程</a>
+        <a href="#vocabulary">词汇</a>
+        <a href="#reading">阅读</a>
+        <a href="#quiz">测试</a>
+      </nav>
+      <span class="level">A2 <span>俄语</span></span>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="main-title">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="leaf-dot"></span> 面向中国学生的俄语情境课</p>
+        <h1 id="main-title" lang="ru">Деловой<br>русский<span>.</span></h1>
+        <h2>俄罗斯商务沟通</h2>
+        <p class="hero-description">从第一次见面到发出一封邮件，在中俄商务情境中练习称呼、约时间和礼貌表达。</p>
+        <a class="button primary" href="#lessons">选择课程 <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="hero-art">
+        <img src="./assets/meeting.webp" width="1200" height="800" fetchpriority="high" alt="阳光下的会议室里，来自中国和俄罗斯的同事第一次见面，伸手致意。">
+        <figcaption><span lang="ru">Первая встреча</span><span>第一次见面</span></figcaption>
+      </figure>
+    </section>
+    <section class="catalog wrap" id="lessons" aria-labelledby="catalog-title">
+      <div class="section-heading"><div><p class="eyebrow" lang="ru">Уроки</p><h2 id="catalog-title">选择一个商务情境</h2></div><span class="section-note">每课包含词汇、短文和测试</span></div>
+      <div class="lesson-grid" id="lesson-grid"></div>
+      <noscript><p>请启用 JavaScript 以打开课文和互动测试。</p></noscript>
+    </section>
+    <div id="lesson-content"></div>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><span lang="ru">Деловой русский <span class="footer-a2">A2</span></span><a href="#main">返回顶部 ↑</a></div></footer>
+  <audio id="player" preload="none" hidden></audio>
+  <p id="audio-status" class="sr-only" role="status"></p>
+</body>
+</html>
